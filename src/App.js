@@ -7,6 +7,7 @@ import Cart from './components/Cart';
 import AllItems from './components/All-Items';
 import ItemDetail from './components/Item-Detail';
 import Checkout from './components/Checkout';
+import Register from './components/Register';
 
 function App() {
   return (
@@ -19,6 +20,7 @@ function App() {
         <Route path='/item-details' element={<ItemDetail />}></Route>
         <Route path='/checkout' element={<Checkout />}></Route>
         <Route path='/home' element={<AllItems />}></Route>
+        <Route path='/register' element={<Register />}></Route>
       </Routes>
     </div>
   );
