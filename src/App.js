@@ -15,7 +15,7 @@ function App() {
       <Routes>
         {/* <Route exact path='/' element={<Home setUserSquad={setUserSquad} setOponentSquad={setOponentSquad} />}>
         </Route> */}
-        <Route exact path='/d' element={<Home />}>  </Route>
+        <Route exact path='/' element={<Home />}>  </Route>
         <Route path='/item-details' element={<ItemDetail />}></Route>
         <Route path='/checkout' element={<Checkout />}></Route>
         <Route path='/home' element={<AllItems />}></Route>
