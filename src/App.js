@@ -1,23 +1,25 @@
-import logo from './logo.svg';
 import './App.css';
+import Button from '@mui/material/Button';
+import React from 'react'
+import { Route, Routes, Switch } from 'react-router-dom';
+import Home from './components/Home';
+import Cart from './components/Cart';
+import AllItems from './components/All-Items';
+import ItemDetail from './components/Item-Detail';
+import Checkout from './components/Checkout';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      {/* <Button variant="contained">Hello World</Button> */}
+      <Routes>
+        {/* <Route exact path='/' element={<Home setUserSquad={setUserSquad} setOponentSquad={setOponentSquad} />}>
+        </Route> */}
+        <Route exact path='/' element={<Home />}>  </Route>
+        <Route path='/item-details' element={<ItemDetail />}></Route>
+        <Route path='/checkout' element={<Checkout />}></Route>
+        <Route path='/home' element={<AllItems />}></Route>
+      </Routes>
     </div>
   );
 }
